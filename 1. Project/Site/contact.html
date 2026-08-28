@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Connects the page to the main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Thendo Events | Contact</title>
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER AND NAVIGATION
+         ===================================== -->
+    <header>
+
+        <!-- Website name -->
+        <h1>Thendo Events</h1>
+
+        <!-- Navigation links -->
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="services.html">Services</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================
+         MAIN CONTENT
+         ===================================== -->
+    <main>
+
+        <!-- Contact introduction -->
+        <section>
+            <div class="section-box">
+            <h2>Contact Thendo Events</h2>
+
+            <p>
+                Have an event in mind? Get in touch with us
+                to discuss your event planning and catering needs.
+            </p>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             CONTACT INFORMATION
+             ===================================== -->
+        <section class="contact-info">
+            <div class="section-box">
+            <h2>Contact Information</h2>
+
+            <div class="subbox">
+                <p>
+                    <strong>Phone:</strong>
+                    0713090117
+                </p>
+            </div>
+
+            <div class="subbox">
+                <p>
+                    <strong>Email:</strong>
+                    info@thendoevents.co.za
+                </p>
+            </div>
+
+            <div class="subbox">
+                <p>
+                    <strong>Location:</strong>
+                    Johannesburg, South Africa
+                </p>
+            </div>
+
+            <div class="subbox">
+                <p>
+                    <strong>Instagram:</strong>
+                    Thendo Events &amp; Catering
+                </p>
+            </div>
+
+            <div class="subbox">
+                <p>
+                    <strong>Facebook:</strong>
+                    Thendo Events &amp; Catering
+                </p>
+            </div>
+
+            <div class="subbox">
+                <p>
+                    <strong>TikTok:</strong>
+                    Thendo Events &amp; Catering
+                </p>
+            </div>
+            </div>
+        </section>
+
+
+           <!-- =====================================
+               CONTACT FORM
+               ===================================== -->
+           <section>
+              <div class="section-box">
+              <h2>Send Us a Message</h2>
+
+              <!-- Contact form -->
+              <form>
+
+                <!-- Name field -->
+                <label for="name">Full Name:</label>
+                <br>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <br><br>
+
+
+                <!-- Email field -->
+                <label for="email">Email Address:</label>
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+
+                <!-- Phone field -->
+                <label for="phone">Phone Number:</label>
+                <br>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone">
+
+                <br><br>
+
+
+                <!-- Event type -->
+                <label for="event">Type of Event:</label>
+                <br>
+
+                <select id="event" name="event">
+
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="catering">Catering</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Message field -->
+                <label for="message">Message:</label>
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          cols="40"
+                          required>
+                </textarea>
+
+                <br><br>
+
+
+                <!-- Submit button -->
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             CONTACT SHOWCASE (SLIDESHOW)
+             ===================================== -->
+        <section>
+            <div class="section-box">
+            <h2>Let Us Plan Your Event</h2>
+
+            <div class="services-video" aria-label="Our services slideshow">
+                <button class="svc-prev" aria-label="Previous">&#8249;</button>
+                <div class="svc-slides">
+                    <div class="slide" data-label="Weddings" style="background-image:url('images/wedding.jpg')"></div>
+                    <div class="slide" data-label="Birthdays" style="background-image:url('images/birthday1.jpg')"></div>
+                    <div class="slide" data-label="Corporate" style="background-image:url('images/corporate events.jpg')"></div>
+                    <div class="slide" data-label="Catering" style="background-image:url('images/catering1.jpg')"></div>
+                    <div class="slide" data-label="Drinks" style="background-image:url('images/catering drinks.jpg')"></div>
+                    <div class="slide" data-label="Moments" style="background-image:url('images/wedding2.jpg')"></div>
+                </div>
+                <button class="svc-next" aria-label="Next">&#8250;</button>
+                <div class="svc-caption" aria-hidden="false"></div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
+    <footer>
+
+        <p>
+            &copy; 2026 Thendo Events.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+</body>
+
+</html>
+
+<!-- Connects the page to the JavaScript file -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
