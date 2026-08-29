@@ -16,7 +16,7 @@
 :root {
     --bg: #000000;
     --panel: #0f0f0f;
-    --text: #f5f5f5;
+    --text: #c1f8fb;
     --muted: #d7d7d7;
     --accent-pink: #9b5de5;
     --accent-purple: #6f42c1;
@@ -411,5 +411,327 @@ nav a,
     }
     .services-video {
         height: 290px;
+    }
+}
+/* =========================================
+   THENDO EVENTS — LUXURY HOME PAGE
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    color: #21f8fb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.92);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    color: #ffd166;
+}
+
+.logo small {
+    color: #d7d7d7;
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: #d7d7d7;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #21f8fb;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 7%;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(155,93,229,0.18), transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(83,200,255,0.13), transparent 35%),
+        #000000;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.eyebrow,
+.section-label {
+    color: #ffd166;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.hero h1 span,
+.intro h2 span,
+.section-heading h2 span,
+.cta h2 span {
+    background: linear-gradient(90deg, #9b5de5, #53c8ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #d7d7d7;
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn.primary {
+    background: linear-gradient(90deg, #6f42c1, #9b5de5);
+    color: white;
+    box-shadow: 0 0 25px rgba(155,93,229,0.25);
+}
+
+.btn.secondary {
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #d7d7d7;
+    background: rgba(255,255,255,0.03);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* INTRO */
+
+.intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 120px 7%;
+    text-align: center;
+}
+
+.intro h2,
+.section-heading h2,
+.cta h2 {
+    color: #ffffff;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.intro > p:last-child {
+    color: #d7d7d7;
+    font-size: 1rem;
+}
+
+/* SERVICES */
+
+.services-preview {
+    padding: 100px 7%;
+    background: #0f0f0f;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 35px;
+    background: #000000;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(155,93,229,0.5);
+}
+
+.icon {
+    color: #ffd166;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: #d7d7d7;
+    font-size: 0.9rem;
+}
+
+/* CTA */
+
+.cta {
+    padding: 130px 7%;
+    text-align: center;
+    background:
+        radial-gradient(circle at center, rgba(111,66,193,0.18), transparent 50%),
+        #000000;
+}
+
+.cta .btn {
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 50px 7%;
+    text-align: center;
+    background: #0f0f0f;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-logo {
+    color: #ffd166;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d7d7d7;
+    font-size: 0.85rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #d7d7d7;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #21f8fb;
+}
+
+.copyright {
+    opacity: 0.6;
+    margin-top: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .services-preview,
+    .cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
